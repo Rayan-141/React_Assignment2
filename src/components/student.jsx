@@ -1,4 +1,4 @@
-// Student component that accepts name, age, and course as props
+
 const Student = ({ name, age, course }) => {
     return (
       <div className="bg-blue-50 border-l-4 border-blue-500 p-5 mb-4 shadow-sm hover:shadow-md transition-shadow">
@@ -11,12 +11,12 @@ const Student = ({ name, age, course }) => {
     );
   };
   
-  // Main component that renders a list of students
+
   function App() {
     const students = [
-      { name: "Rahul Sharma", age: 20, course: "Computer Science" },
-      { name: "Priya Patel", age: 22, course: "Mechanical Engineering" },
-      { name: "Amit Kumar", age: 21, course: "Business Administration" }
+      { name: "John Doe", age: 25, course: "Data Science" },
+      { name: "Jane Smith", age: 23, course: "Electrical Engineering" },
+      { name: "Bob Johnson", age: 24, course: "Marketing" }
     ];
   
     return (
@@ -26,6 +26,7 @@ const Student = ({ name, age, course }) => {
             <h1 className="text-3xl font-bold text-gray-800 text-center">
               🎓 Student Directory
             </h1>
+            <p className="text-center text-gray-600 mt-2">Made by Rayan Rawat</p>
           </div>
           <div>
             {students.map((student, index) => (
